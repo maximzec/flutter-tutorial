@@ -1,5 +1,4 @@
-
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 final class TutotialColors {
   static const primaryColor = Color(0xFF23A6F0);
@@ -18,4 +17,27 @@ final class TutotialColors {
   static const dangerColor = Color(0xFFE74040);
   static const lightGray1 = Color(0xFFFAFAFA);
   static const lightGray2 = Color(0xFFECECEC);
+}
+
+class MontserratTypography {
+  static const _fontFamily = "Montserrat";
+
+  static TextStyle montserratBlack =
+      const TextStyle(fontFamily: _fontFamily, fontWeight: FontWeight.w900);
+  static TextStyle montserratExtraBold =
+      const TextStyle(fontFamily: _fontFamily, fontWeight: FontWeight.w800);
+  static TextStyle montserratBold =
+      const TextStyle(fontFamily: _fontFamily, fontWeight: FontWeight.bold);
+  static TextStyle montserratSemibold =
+      const TextStyle(fontFamily: _fontFamily, fontWeight: FontWeight.w600);
+  static TextStyle montserratMedium =
+      const TextStyle(fontFamily: _fontFamily, fontWeight: FontWeight.w500);
+  static TextStyle montserratRegular =
+      const TextStyle(fontFamily: _fontFamily, fontWeight: FontWeight.w400);
+  static TextStyle montserratThin =
+      const TextStyle(fontFamily: _fontFamily, fontWeight: FontWeight.w300);
+  static TextStyle montserratLight =
+      const TextStyle(fontFamily: _fontFamily, fontWeight: FontWeight.w200);
+  static TextStyle montserratExtrathin =
+      const TextStyle(fontFamily: _fontFamily, fontWeight: FontWeight.w100);
 }

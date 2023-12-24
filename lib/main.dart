@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:web_tutorial/text.dart';
 import 'uikit.dart';
 
 void main() {
@@ -16,26 +16,36 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+        useMaterial3: false,
       ),
-      home: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(
-              width: 1000, // занимает весь размер по ширине
-              height: 1000,
-              child: ColoredBox(
-                color: TutotialColors.lightGray1,
-                child: Column(
-                  children: [
-                    Text("BrandName",
-                        style: GoogleFonts.montserrat(
-                            textStyle: TextStyle(fontWeight: FontWeight.bold)))
-                  ],
+      home: const SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                width: double.infinity, // занимает весь размер по ширине
+                height: 1800,
+                child: ColoredBox(
+                  color: TutotialColors.lightGray1,
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          NavHeaderText(data: "BrandName"),
+                          Link(data: "Home"),
+                          Link(data: "Product"),
+                          Link(data: "Pricing"),
+                          Link(data: "Contact"),
+                          BtnText(data: "Login")
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ),
     );
