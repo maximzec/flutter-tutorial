@@ -16,11 +16,44 @@ class BecomeMemberButton extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(5)),
             ),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 BtnText(
                     data: "Become a member",
-                    color: TutotialColors.lightTextColor)
+                    color: TutotialColors.lightTextColor),
+                SizedBox(width: 15),
+                Icon(
+                  Icons.arrow_forward,
+                  color: TutotialColors.lightTextColor,
+                )
               ],
             )));
+  }
+}
+
+class RoundedButton extends StatelessWidget {
+  final String data;
+  final double width;
+  final Color backgroundColor, textColor;
+
+  const RoundedButton(
+      {super.key,
+      required this.width,
+      required this.backgroundColor,
+      required this.textColor,
+      required this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 52,
+      width: width,
+      decoration: BoxDecoration(
+          borderRadius: const BorderRadius.all(Radius.circular(37)),
+          color: backgroundColor),
+      child: Center(
+        child: BtnText(data: data, color: textColor),
+      ),
+    );
   }
 }

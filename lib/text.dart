@@ -46,3 +46,30 @@ class NavHeaderText extends StatelessWidget {
             decoration: TextDecoration.none));
   }
 }
+
+class H1Text extends StatelessWidget {
+  final String data;
+  const H1Text({super.key, required this.data});
+  @override
+  Widget build(BuildContext context) {
+    return Text(data,
+        style: MontserratTypography.montserratExtraBold.copyWith(
+            color: TutotialColors.textColor,
+            fontSize: 58,
+            decoration: TextDecoration.none));
+  }
+}
+
+class H4Text extends StatelessWidget {
+  final String data;
+  const H4Text({super.key, required this.data});
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(data,
+        style: MontserratTypography.montserratMedium.copyWith(
+            color: TutotialColors.secondTextColor,
+            fontSize: 30,
+            decoration: TextDecoration.none));
+  }
+}
