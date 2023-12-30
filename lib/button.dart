@@ -34,14 +34,15 @@ class BecomeMemberButton extends StatelessWidget {
 class RoundedButton extends StatelessWidget {
   final String data;
   final double width;
-  final Color backgroundColor, textColor;
+  final Color backgroundColor, textColor, borderColor;
 
   const RoundedButton(
       {super.key,
       required this.width,
       required this.backgroundColor,
       required this.textColor,
-      required this.data});
+      required this.data,
+      required this.borderColor});
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +51,8 @@ class RoundedButton extends StatelessWidget {
       width: width,
       decoration: BoxDecoration(
           borderRadius: const BorderRadius.all(Radius.circular(37)),
-          color: backgroundColor),
+          color: backgroundColor,
+          border: Border.all(color: borderColor)),
       child: Center(
         child: BtnText(data: data, color: textColor),
       ),

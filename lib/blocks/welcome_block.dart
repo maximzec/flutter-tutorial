@@ -14,10 +14,9 @@ class WelcomeBlock extends StatelessWidget {
         width: double.infinity,
         height: 1050,
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Column(children: [
-              H1Text(data: "Your Financial Assistance"),
+            Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              H1Text(data: "Your Financial \nAssistance"),
               SizedBox(height: 35),
               H4Text(
                   data:
@@ -28,21 +27,19 @@ class WelcomeBlock extends StatelessWidget {
                   RoundedButton(
                       width: 187,
                       backgroundColor: TutotialColors.primaryColor,
+                      borderColor: TutotialColors.primaryColor,
                       textColor: TutotialColors.lightTextColor,
                       data: "Get Quote Now"),
+                  SizedBox(width: 10),
                   RoundedButton(
                       width: 154,
-                      backgroundColor: TutotialColors.primaryColor,
-                      textColor: TutotialColors.lightTextColor,
-                      data: "Get Quote Now"),
+                      backgroundColor: TutotialColors.transparent,
+                      borderColor: TutotialColors.primaryColor,
+                      textColor: TutotialColors.primaryColor,
+                      data: "Learn More"),
                 ],
               )
             ]),
-            Image(
-              image: AssetImage("assets/images/mockup.png"),
-              width: 510,
-              height: 587,
-            )
           ],
         ),
       ),
