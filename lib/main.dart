@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_tutorial/blocks/navbar.dart';
 import 'package:web_tutorial/blocks/welcome_block.dart';
+import 'package:web_tutorial/uikit.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,14 @@ class MyApp extends StatelessWidget {
       ),
       home: const SingleChildScrollView(
         child: Column(
-          children: [NavBar(), SizedBox(height: 92), WelcomeBlock()],
+          children: [
+            NavBar(),
+            SizedBox(
+              height: 92,
+              child: ColoredBox(color: TutotialColors.lightGray2),
+            ),
+            WelcomeBlock()
+          ],
         ),
       ),
     );
