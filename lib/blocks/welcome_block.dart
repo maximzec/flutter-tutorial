@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:web_tutorial/button.dart';
-import 'package:web_tutorial/text.dart';
+import 'package:web_tutorial/widgets/button.dart';
+import 'package:web_tutorial/widgets/text.dart';
 import 'package:web_tutorial/uikit.dart';
 
 class WelcomeBlock extends StatelessWidget {

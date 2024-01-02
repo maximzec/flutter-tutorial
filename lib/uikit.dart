@@ -17,7 +17,10 @@ final class TutotialColors {
   static const dangerColor = Color(0xFFE74040);
   static const lightGray1 = Color(0xFFFAFAFA);
   static const lightGray2 = Color(0xFFECECEC);
+  static const basicStrokeColor = Color(0xFFE9E9E9);
   static const transparent = Colors.transparent;
+  static const secondary = Color(0xFFF3CD03);
+  static const secondStrokeColor = Color(0xFFDEDEDE);
 }
 
 class MontserratTypography {

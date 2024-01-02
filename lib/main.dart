@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:web_tutorial/blocks/navbar.dart';
+import 'package:web_tutorial/blocks/options_block.dart';
+import 'package:web_tutorial/blocks/reviews_block.dart';
 import 'package:web_tutorial/blocks/welcome_block.dart';
 import 'package:web_tutorial/uikit.dart';
 
@@ -28,7 +30,10 @@ class MyApp extends StatelessWidget {
               height: 92,
               child: ColoredBox(color: TutotialColors.lightGray2),
             ),
-            WelcomeBlock()
+            WelcomeBlock(),
+            SizedBox(height: 160),
+            OptionsBlock(),
+            ReviewsBlock()
           ],
         ),
       ),

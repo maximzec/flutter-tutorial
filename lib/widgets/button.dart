@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_tutorial/text.dart';
+import 'package:web_tutorial/widgets/text.dart';
 import 'package:web_tutorial/uikit.dart';
 
 class BecomeMemberButton extends StatelessWidget {

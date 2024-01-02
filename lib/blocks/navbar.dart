@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:web_tutorial/button.dart';
-import 'package:web_tutorial/text.dart';
+import 'package:web_tutorial/widgets/button.dart';
+import 'package:web_tutorial/widgets/text.dart';
 import 'package:web_tutorial/uikit.dart';
 
 class NavBar extends StatelessWidget {
@@ -8,7 +8,7 @@ class NavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         SizedBox(
           width: double.infinity, // занимает весь размер по ширине
