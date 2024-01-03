@@ -74,3 +74,33 @@ class ReviewCard extends StatelessWidget {
     );
   }
 }
+
+class NewsCard extends StatelessWidget {
+  final String imageUri;
+  const NewsCard({super.key, required this.imageUri});
+
+  @override
+  Widget build(BuildContext context) {
+    return Flexible(
+        child: Stack(
+      children: [
+        // Image(image: AssetImage(imageUri)),
+        SizedBox(
+          child: DecoratedBox(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage(imageUri), fit: BoxFit.cover),
+                gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      TutotialColors.transparent,
+                      TutotialColors.gradientGray
+                    ])),
+            child: H1Text(data: "data"),
+          ),
+        ),
+      ],
+    ));
+  }
+}

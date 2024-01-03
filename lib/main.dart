@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:web_tutorial/blocks/navbar.dart';
+import 'package:web_tutorial/blocks/news_block.dart';
 import 'package:web_tutorial/blocks/options_block.dart';
 import 'package:web_tutorial/blocks/reviews_block.dart';
 import 'package:web_tutorial/blocks/welcome_block.dart';
@@ -33,7 +34,8 @@ class MyApp extends StatelessWidget {
             WelcomeBlock(),
             SizedBox(height: 160),
             OptionsBlock(),
-            ReviewsBlock()
+            ReviewsBlock(),
+            NewsBlock()
           ],
         ),
       ),

@@ -63,6 +63,11 @@ flutter:
   assets:
      - assets/fonts/
      - assets/images/mockup.png
+     - assets/images/post.1.png
+     - assets/images/post.2.png
+     - assets/images/post.3.png
+     - assets/images/post.4.png
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

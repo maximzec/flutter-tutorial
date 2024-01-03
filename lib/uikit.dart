@@ -21,6 +21,7 @@ final class TutotialColors {
   static const transparent = Colors.transparent;
   static const secondary = Color(0xFFF3CD03);
   static const secondStrokeColor = Color(0xFFDEDEDE);
+  static const gradientGray = Color(0x84565656);
 }
 
 class MontserratTypography {
